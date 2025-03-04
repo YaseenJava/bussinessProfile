@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import Skill2 from "./Skill2";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGoogle ,faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
+import Projects from "./Projects";
 
 
 export default function Home() {
@@ -12,7 +13,7 @@ export default function Home() {
 
   return (
     <div
-      className="h-screen w-screen bg-right lg:bg-cover mt-[-32px]"
+      className="h-screen w-[100%] bg-right lg:bg-cover mt-[-32px] lg:w-screen"
       style={{
         backgroundImage:
           "url('https://www.shutterstock.com/image-photo/ancient-marble-statue-mythical-character-600nw-1696139806.jpg')",
@@ -40,10 +41,10 @@ export default function Home() {
             
             <div className="flex-col space-x-4 mt-3">
       
-      <a href="https://www.linkedin.com/in/" target="_blank" rel="noopener noreferrer">
+      <a href="https://www.linkedin.com/in/yaseen-khan-5248482bb" target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={faLinkedin} className=" lg:bg-white rounded-1xl" size="2x" />
       </a>
-      <a href="https://github.com/" className="" target="_blank" rel="noopener noreferrer">
+      <a href="https://github.com/YaseenJava" className="" target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={faGithub}  className="lg:bg-white border rounded-2xl" size="2x" />
       </a>
       <a href="mailto:shibukha249@gmail.com" className="lg:h-4  " target="_blank" rel="noopener noreferrer">
@@ -55,7 +56,7 @@ export default function Home() {
           </div>
         </motion.div>
         {path === "skills" ? <Skill2 />:<></>}
-        {/* <Skill2/> */}
+        {path === "project" ? <Projects/>:<></>}
 
     </div>
   );

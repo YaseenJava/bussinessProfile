@@ -10,7 +10,7 @@ function Skill2() {
   ];
 
   return (
-    <div className="flex flex-wrap w-screen gap-6 p-6 justify-center items-center bg-black absolute lg:top-[60px] lg:h-[400px] lg:w-[50%]">
+    <div className="flex flex-wrap w-[100%]  gap-6 p-6 justify-center items-center bg-black absolute lg:top-[60px] lg:h-[400px] lg:w-[50%]">
       {data.map((skill, key) => (
         <motion.div
           key={key}
@@ -23,7 +23,7 @@ function Skill2() {
             <img
               src={skill.url}
               alt={skill.technoly}
-              className="w-27 h-16"
+              className="w-29 h-18"
             />
           </div>
           <h4 className="text-center font-semibold mt-3 text-white">{skill.technoly}</h4>

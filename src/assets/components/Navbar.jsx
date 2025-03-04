@@ -11,7 +11,7 @@
         
         
         >
-        <div className="container mx-auto flex justify-center space-x-8 fixed">
+        <div className="container mx-auto flex justify-center space-x-8 fixed  z-10">
           <a href="/" className="hover:text-gray-400">Home</a>
         <Link to="/skills" className="hover:text-gray-400">Skills</Link>
         <Link to="/project" className="hover:text-gray-400">Projects</Link>
