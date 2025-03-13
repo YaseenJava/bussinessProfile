@@ -9,16 +9,27 @@ export default function Projects() {
   ];
 
   return (
-    <div className="flex flex-wrap w-[100%]  gap-6 p-6 justify-center items-center bg-black absolute lg:top-[60px] lg:h-[400px] lg:w-[50%]">
+    <div className="flex flex-wrap w-[100%] bg-cover h-[900px] lg:w-screen lg:h-full gap-6 p-6 justify-center items-center absolute top-[0.2px]"
+    
+    style={{
+      backgroundImage:
+        "url('https://i.pinimg.com/736x/d6/b7/dc/d6b7dc0c137d55814414e8615abd6a61.jpg')",
+      backgroundRepeat: "no-repeat",
+      backgroundSize: "cover",
+      backgroundPosition:"top"
+}}
+
+    
+    >
       {projectDetail.map((project, index) => (
         <motion.div
           key={project.id}
-          initial={{ y: 30, opacity: 0 }}
+          initial={{ y: 1, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5, ease: "easeOut", delay: index * 0.2 }}
-          className="bg-black border border-gray-700 rounded-xl shadow-lg p-6 w-[250px] text-white hover:shadow-2xl hover:-translate-y-2 transition duration-300"
+          className=" rounded-xl shadow-2xl bg-blur-1xl p-6 w-[250px] text-white hover:shadow-2xl hover:-translate-y-2 transition duration-300"
         >
-          <h3 className="text-lg font-semibold text-green-600">{project.name}</h3>
+          <h3 className="text-lg font-bold text-orange-400">{project.name}</h3>
           <p className="text-sm text-gray-300 mt-2">{project.desc}</p>
           <p className="text-xs text-gray-400 mt-2">Tech Stack: <span className="font-medium text-gray-200">{project.tech}</span></p>
         </motion.div>

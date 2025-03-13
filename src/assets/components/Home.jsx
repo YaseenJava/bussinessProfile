@@ -13,10 +13,10 @@ export default function Home() {
 
   return (
     <div
-      className="h-screen w-[100%] bg-right lg:bg-cover mt-[-32px] lg:w-screen"
+      className="h-screen lg:bg-cover mt-[-32px] lg:w-screen"
       style={{
         backgroundImage:
-          "url('https://www.shutterstock.com/image-photo/ancient-marble-statue-mythical-character-600nw-1696139806.jpg')",
+          "url('https://i.pinimg.com/736x/49/4b/b8/494bb87ea545115cdf7a51ac7ead9363.jpg')",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
       }}
@@ -33,7 +33,7 @@ export default function Home() {
         
           <div className="max-w-lg">
             <h1 className="text-white text-5xl font-bold">Hey! I'm Yaseen</h1>
-            <h4 className="text-white mt-4 text-lg">
+            <h4 className="text-white mt-4 text-lg mr-5">
               I am a passionate <b>Full stack Software Developer</b> specializing in Java Spring Boot.
               With a strong foundation in backend development, I build scalable and secure applications.
               Always eager to learn new technologies and solve complex problems.
