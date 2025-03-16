@@ -30,8 +30,8 @@ export default function Projects() {
           className=" rounded-xl shadow-2xl bg-blur-1xl p-6 w-[250px] text-white hover:shadow-2xl hover:-translate-y-2 transition duration-300"
         >
           <h3 className="text-lg font-bold text-orange-400">{project.name}</h3>
-          <p className="text-sm text-gray-300 mt-2">{project.desc}</p>
-          <p className="text-xs text-gray-400 mt-2">Tech Stack: <span className="font-medium text-gray-200">{project.tech}</span></p>
+          <p className="text-sm text-white mt-2">{project.desc}</p>
+          <p className="text-xs text-white mt-2">Tech Stack: <span className="font-medium text-white">{project.tech}</span></p>
         </motion.div>
       ))}
     </div>
