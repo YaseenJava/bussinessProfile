@@ -33,7 +33,7 @@ export default function Home() {
         
           <div className="max-w-lg">
             <h1 className="text-white text-5xl font-bold">Hey! I'm Yaseen</h1>
-            <h4 className="text-white mt-4 text-lg mr-5">
+            <h4 className="text-white mt-4 text-lg mr-7">
               I am a passionate <b>Full stack Software Developer</b> specializing in Java Spring Boot.
               With a strong foundation in backend development, I build scalable and secure applications.
               Always eager to learn new technologies and solve complex problems.
